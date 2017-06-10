@@ -1,0 +1,28 @@
+name: BetterFix
+main: net.terrocidepvp.betterfix.BetterFix
+version: 1.0.0
+author: Terrobility
+description: Have full control over fixing items!
+website: https://terrocidepvp.net/
+commands:
+    fix:
+        description: "Fix your currently held item."
+        aliases: [repair]
+    fixall:
+        description: "Fix all items in your inventory."
+        aliases: [repairall]
+permissions:
+    betterfix.fix:
+        description: "Allows you to use '/fix'."
+        default: op
+    betterfix.fixall:
+        description: "Allows you to use '/fixall'."
+        default: op
+    betterfix.fixall.armor:
+        description: "Allows '/fixall' to repair the player's armor slots in addition to inventory contents."
+        default: op
+        children:
+            betterfix.fixall: true
+    betterfix.enchanted:
+        description: "Allows for fixing enchanted items."
+        default: op

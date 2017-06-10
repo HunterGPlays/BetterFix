@@ -1,0 +1,31 @@
+# BetterFix by Terrobility
+# Skype: huntergplays and Spigot: Terrobility <3
+
+# x=x=x=x=x=x=x=x=x
+# | CONFIGURATION |
+# x=x=x=x=x=x=x=x=x
+# Please don't change the config version.
+config-version: 1
+
+plugin-messages:
+    no-permission: "&cYou don't have permission."
+    invalid-arguments: "&cInvalid arguments!"
+    not-holding-items: "&cYou are not holding any items!"
+    already-at-full-durability: "&cThe held item is already at full durability!"
+    enchanted-no-permission: "&cYou don't have permission to repair enchanted items!"
+    blacklisted-name: "&cThis item can't be repaired because it has a blacklisted name!"
+    blacklisted-lore: "&cThis item can't be repaired because it has a blacklisted lore!"
+    disallowed-material: "&cThis material can't be repaired!"
+    successful-repair: "&aSuccessfully repaired your item!"
+
+materials:
+- "WOOD_SWORD"
+- "WOOD_AXE"
+- "WOOD_PICKAXE"
+- "WOOD_SPADE"
+
+blacklist:
+    names: []
+    lores:
+    - "mcMMO Ability Tool"
+    - "One use only!"
