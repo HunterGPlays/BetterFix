@@ -1,8 +1,8 @@
 name: BetterFix
 main: net.terrocidepvp.betterfix.BetterFix
-version: 1.0.0
+version: ${project.version}
 author: Terrobility
-description: Have full control over fixing items!
+description: ${project.description}
 website: https://terrocidepvp.net/
 commands:
     fix:
