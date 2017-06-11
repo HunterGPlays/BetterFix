@@ -9,6 +9,18 @@
     <version>1.0.0</version>
     <description>Have full control over fixing items!</description>
 
+    <build>
+        <!--Enable resource filtering-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <!--Output target file without version name-->
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -16,8 +28,8 @@
     </properties>
 
     <repositories>
+        <!--Spigot repository-->
         <repository>
-            <!--Spigot repository-->
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
